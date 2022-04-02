@@ -1,0 +1,3 @@
+2 methods : static getDerivedStateFromError and componentDidCatch
+
+Called when there is an error during rendering, in a Lifecycle method, or in the constructor of any child component.

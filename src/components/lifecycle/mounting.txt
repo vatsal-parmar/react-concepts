@@ -1,0 +1,18 @@
+4 methods : constructor, static getDerivedStateFromProps, render and componentDidMount
+
+constructor : A special function that will get called whenever a new component is created.
+              Do not cause side effects. Ex HTTP requests
+
+static getDerivedStateFromProps (rarely used) : When the state of the component depends on changes
+                                                in props over time.
+                                                return null or object representing new state.
+                                                called every time component is re-rendered
+                                                Do not cause side effects. Ex HTTP requests
+                                        
+render : Read props & state and return JSX
+         Do not change state or interact with DOM or make ajax calls.
+         Children components Lifecycle methods are also executed
+        
+componentDidMount : invoked immediately after a component and all its Children components have been
+                    rendered to the DOM
+                    Cause side effects. Ex HTTP requests, interact with DOM.

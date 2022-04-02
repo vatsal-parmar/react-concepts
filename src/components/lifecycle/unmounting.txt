@@ -1,0 +1,5 @@
+1 method : componentWillUnmount
+
+componentWillUnmount : Method is invoked immediately before a component is unmounted and destroyed.
+                       cancelling any network requests, removing event handlers, invaliding timers,
+                       Do not call setState method

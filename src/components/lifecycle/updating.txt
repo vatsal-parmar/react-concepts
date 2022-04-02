@@ -1,0 +1,22 @@
+5 methods : static getDerivedStateFromProps, shouldComponentUpdate, render, getSnapshotBeforeUpdate and componentDidUpdate
+
+static getDerivedStateFromProps (rarely used) : When the state of the component depends on changes
+                                                in props over time.
+                                                return null or object representing new state.
+                                                called every time component is re-rendered
+                                                Do not cause side effects. Ex HTTP requests
+                                              
+shouldComponentUpdate (rarely used) : Dictats if the component should re-render or not
+                        Do not cause side effects. Ex HTTP requests or calling setState method.
+
+render : Read props & state and return JSX
+         Do not change state or interact with DOM or make ajax calls.
+         Children components Lifecycle methods are also executed
+
+getSnapshotBeforeUpdate (rarely used) : called right before the changes from virtual DOM are to be reflected in DOM.
+                                        to capture some information from DOM
+                                        will return null or a value. returned value will be passed as the
+                                        third parameter to the next method.
+
+componentDidUpdate : called after the render is finished in the re-render cycles.
+                     cause side effects
