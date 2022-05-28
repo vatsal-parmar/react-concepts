@@ -1,15 +1,18 @@
 import './App.css';
 import React from 'react';
-import LifecycleA from './components/lifecycle/LifecycleA';
-import ClickCounter from './components/hoc/Normal/ClickCounter';
-import HoverCounter from './components/hoc/Normal/HoverCounter';
-import NewClickCounter from './components/hoc/WithHoc/ClickCounter';
-import NewHoverCounter from './components/hoc/WithHoc/HoverCounter';
-import { ComponentA } from './components/context/ComponentA';
-import { DocOne } from './components/customhooks/DocOne';
-import { DocTwo } from './components/customhooks/DocTwo';
-import CounterOne from './components/customhooks/CounterOne';
-import CounterTwo from './components/customhooks/CounterTwo';
+// import LifecycleA from './components/lifecycle/LifecycleA';
+// import ClickCounter from './components/hoc/Normal/ClickCounter';
+// import HoverCounter from './components/hoc/Normal/HoverCounter';
+// import NewClickCounter from './components/hoc/WithHoc/ClickCounter';
+// import NewHoverCounter from './components/hoc/WithHoc/HoverCounter';
+// import { ComponentA } from './components/context/ComponentA';
+// import { DocOne } from './components/customhooks/DocOne';
+// import { DocTwo } from './components/customhooks/DocTwo';
+// import CounterOne from './components/customhooks/CounterOne';
+// import CounterTwo from './components/customhooks/CounterTwo';
+import CounterOne from './components/reducer/CounterOne';
+import CounterTwo from './components/reducer/CounterTwo';
+import CounterThree from './components/reducer/CounterThree';
 
 export const FirstContext = React.createContext();
 
@@ -27,14 +30,18 @@ function App() {
       {/* <NewClickCounter /> */}
       {/* <NewHoverCounter /> */}
       {/* Context */}
-      <FirstContext.Provider value={'Batman'}>
+      {/* <FirstContext.Provider value={'Batman'}>
         <ComponentA />
-      </FirstContext.Provider>
+      </FirstContext.Provider> */}
       {/* CustomHooks */}
       {/* <DocOne /> */}
       {/* <DocTwo /> */}
       {/* <CounterOne /> */}
       {/* <CounterTwo /> */}
+      {/* useReducer */}
+      <CounterOne />
+      {/* <CounterTwo /> */}
+      {/* <CounterThree /> */}
     </div>
   );
 }

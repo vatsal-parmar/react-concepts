@@ -1,7 +1,7 @@
 import React from 'react';
 import ComponentB from './ComponentB';
 
-export const ComponentA = () => {
+const ComponentA = () => {
   return (
     <div>
       ComponentA
@@ -9,3 +9,4 @@ export const ComponentA = () => {
     </div>
   );
 };
+export default ComponentA;

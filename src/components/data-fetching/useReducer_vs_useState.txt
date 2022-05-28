@@ -1,0 +1,8 @@
+useState vs useReducer
+
+scenario                      useState                useReducer
+type of state                 Number,String,Boolean   Object or Array
+number of state transtions    One or Two              Too Many
+releted state transtions?     no                      yes
+business logic                no business logic       complex business logic
+local vs global               local                   global

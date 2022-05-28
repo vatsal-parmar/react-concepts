@@ -1,0 +1,7 @@
+useReducer:
+useReducer is a hook that is used for state management.
+it is an alternative to useState.
+what's the diffrence?
+useState is built using useReducer.
+useReducer(reducer,initialState)
+reducer(currentState,action)
