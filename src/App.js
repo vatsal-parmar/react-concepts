@@ -13,6 +13,9 @@ import React from 'react';
 import CounterOne from './components/reducer/CounterOne';
 import CounterTwo from './components/reducer/CounterTwo';
 import CounterThree from './components/reducer/CounterThree';
+import ParentComponent from './components/usecallback/ParentComponent';
+import Counter from './components/usememo/Counter';
+import FocusedInput from './components/useref/FocusedInput';
 
 export const FirstContext = React.createContext();
 
@@ -39,9 +42,15 @@ function App() {
       {/* <CounterOne /> */}
       {/* <CounterTwo /> */}
       {/* useReducer */}
-      <CounterOne />
+      {/* <CounterOne /> */}
       {/* <CounterTwo /> */}
       {/* <CounterThree /> */}
+      {/* useCallBack */}
+      <ParentComponent />
+      {/* useMemo */}
+      {/* <Counter /> */}
+      {/* useRef */}
+      {/* <FocusedInput /> */}
     </div>
   );
 }
